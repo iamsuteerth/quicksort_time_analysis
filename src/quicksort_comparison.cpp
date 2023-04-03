@@ -16,6 +16,7 @@ using namespace std;
  * RYZEN 9 5900HX @ 4.2 GHz 8 Core 16 Threads
  * RAM 16 GB DUAL CHANNEL @ 3200 MT/s
  */
+
 random_device rd;
 mt19937 gen(rd());
 uniform_int_distribution<int> dist(0, 100000);

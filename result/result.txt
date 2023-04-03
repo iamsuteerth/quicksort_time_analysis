@@ -1,4 +1,4 @@
-Test 1
+Test 1 (Time in ms)
 10000 : Right : 2.028000, Middle :1.019000, Random : 1.712000
 20000 : Right : 2.507000, Middle :3.062000, Random : 3.009000
 30000 : Right : 4.014000, Middle :3.014000, Random : 5.536000
@@ -10,7 +10,7 @@ Test 1
 90000 : Right : 13.794000, Middle :14.363000, Random : 18.266000
 100000 : Right : 16.355000, Middle :15.654000, Random : 20.409000
 
-Test 2
+Test 2 (Time in ms)
 10000 : Right : 2.010000, Middle :1.003000, Random : 1.000000
 20000 : Right : 3.001000, Middle :2.001000, Random : 3.511000
 30000 : Right : 3.505000, Middle :4.013000, Random : 6.001000
@@ -22,7 +22,7 @@ Test 2
 90000 : Right : 14.009000, Middle :12.517000, Random : 18.366000
 100000 : Right : 17.426000, Middle :14.000000, Random : 19.086000
 
-Test 3
+Test 3 (Time in ms)
 10000 : Right : 1.004000, Middle :1.002000, Random : 2.038000
 20000 : Right : 3.404000, Middle :2.017000, Random : 4.024000
 30000 : Right : 4.235000, Middle :4.001000, Random : 4.678000
@@ -34,7 +34,7 @@ Test 3
 90000 : Right : 14.329000, Middle :13.021000, Random : 17.573000
 100000 : Right : 17.272000, Middle :14.551000, Random : 20.079000
 
-Test 4
+Test 4 (Time in ms)
 10000 : Right : 2.000000, Middle :0.502000, Random : 2.002000
 20000 : Right : 2.000000, Middle :3.510000, Random : 3.001000
 30000 : Right : 5.511000, Middle :3.511000, Random : 5.525000
@@ -46,7 +46,7 @@ Test 4
 90000 : Right : 15.183000, Middle :12.602000, Random : 18.461000
 100000 : Right : 16.848000, Middle :14.707000, Random : 20.032000
 
-Test 5
+Test 5 (Time in ms)
 10000 : Right : 2.009000, Middle :1.013000, Random : 1.503000
 20000 : Right : 3.349000, Middle :3.022000, Random : 3.066000
 30000 : Right : 5.397000, Middle :4.675000, Random : 5.028000
