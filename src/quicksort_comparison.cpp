@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <chrono>
+#include <random>
 #define numberOfSamples 10
 #define tests 5
 using namespace std;
@@ -15,26 +16,13 @@ using namespace std;
  * RYZEN 9 5900HX @ 4.2 GHz 8 Core 16 Threads
  * RAM 16 GB DUAL CHANNEL @ 3200 MT/s
  */
-
-int partition_middle(vector<int> &arr, int low, int high)
-{
-    int pivot = arr[(low + high) / 2];
-    int i = low - 1;
-    int j = high + 1;
-    while (true)
-    {
-        do
-        {
-            i++;
-        } while (arr[i] < pivot);
-        do
-        {
-            j--;
-        } while (arr[j] > pivot);
-        if (i >= j)
-            return j;
-        swap(arr[i], arr[j]);
-    }
+random_device rd;
+mt19937 gen(rd());
+uniform_int_distribution<int> dist(0, 100000);
+void swap(int *a, int *b) {
+  int t = *a;
+  *a = *b;
+  *b = t;
 }
 
 int partition_right(vector<int> &arr, int low, int high)
@@ -46,10 +34,10 @@ int partition_right(vector<int> &arr, int low, int high)
         if (arr[j] <= pivot)
         {
             i++;
-            swap(arr[i], arr[j]);
+            swap(&arr[i], &arr[j]);
         }
     }
-    swap(arr[i + 1], arr[high]);
+    swap(&arr[i + 1], &arr[high]);
     return i + 1;
 }
 
@@ -63,38 +51,54 @@ void quicksort_right(vector<int> &arr, int low, int high)
     }
 }
 
+int partition_middle(vector<int> &arr, int low, int high)
+{
+    int pivot = arr[(low + high) / 2];
+    while (low <= high) {
+        while (arr[low] < pivot)
+            low++;
+        while (arr[high] > pivot)
+            high--;
+        if (low <= high) {
+            swap(&arr[low], &arr[high]);
+            low++;
+            high--;
+        }
+    }
+    return low;
+}
+
 void quicksort_middle(vector<int> &arr, int low, int high)
 {
 
     if (low < high)
     {
         int pi = partition_middle(arr, low, high);
-        quicksort_middle(arr, low, pi);
-        quicksort_middle(arr, pi + 1, high);
+        quicksort_middle(arr, low, pi - 1);
+        quicksort_middle(arr, pi, high);
     }
 }
 
 int partition(vector<int> &arr, int low, int high)
 {
     int pivot = arr[high];
-    int i = low - 1;
+    int i = (low - 1);
     for (int j = low; j <= high - 1; j++)
     {
-        if (arr[j] <= pivot)
-        {
+        if (arr[j] <= pivot) {
             i++;
             swap(arr[i], arr[j]);
         }
     }
-    swap(arr[i + 1], arr[high]);
-    return i + 1;
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
 }
 
 int randomized_partition(vector<int> &arr, int low, int high)
 {
-    srand(time(NULL));
-    int random_index = low + rand() % (high - low + 1);
-    swap(arr[random_index], arr[high]);
+    // srand(time(NULL));
+    int random = low +  dist(gen) % (high - low);
+    swap(&arr[random], &arr[high]);
     return partition(arr, low, high);
 }
 
@@ -113,11 +117,6 @@ string testSort(vector<int> &numberSampleQSR, vector<int> &numberSampleQSM, vect
     vector<string> starter{"Right : ", ", Middle :", ", Random : "};
     string res = "";
     double elapsed;
-    // auto start = std::chrono::high_resolution_clock::now();
-    // bubbleSort(numberSampleBubble);
-    // auto end = std::chrono::high_resolution_clock::now();
-    // std::chrono::duration<double> duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-    // res += "Bubble : " + to_string(duration.count());
 
     auto start1 = std::chrono::high_resolution_clock::now();
     quicksort_right(numberSampleQSR, 0, size - 1);

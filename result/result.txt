@@ -1,10 +1,59 @@
-10000 : Right : 1.136000, Middle :2.005000, Random : 1.005000
-20000 : Right : 3.022000, Middle :2.007000, Random : 3.511000
-30000 : Right : 4.021000, Middle :5.015000, Random : 5.016000
-40000 : Right : 6.021000, Middle :6.044000, Random : 7.022000
-50000 : Right : 8.036000, Middle :8.041000, Random : 9.062000
-60000 : Right : 10.043000, Middle :8.067000, Random : 12.793000
-70000 : Right : 12.072000, Middle :10.038000, Random : 14.147000
-80000 : Right : 14.079000, Middle :12.066000, Random : 15.028000
-90000 : Right : 15.026000, Middle :14.025000, Random : 17.114000
-100000 : Right : 18.127000, Middle :15.027000, Random : 20.005000
+Test 1
+10000 : Right : 2.028000, Middle :1.019000, Random : 1.712000
+20000 : Right : 2.507000, Middle :3.062000, Random : 3.009000
+30000 : Right : 4.014000, Middle :3.014000, Random : 5.536000
+40000 : Right : 7.538000, Middle :4.554000, Random : 8.368000
+50000 : Right : 7.593000, Middle :7.050000, Random : 9.445000
+60000 : Right : 8.560000, Middle :8.106000, Random : 11.317000
+70000 : Right : 10.182000, Middle :9.194000, Random : 13.641000
+80000 : Right : 12.387000, Middle :12.615000, Random : 15.345000
+90000 : Right : 13.794000, Middle :14.363000, Random : 18.266000
+100000 : Right : 16.355000, Middle :15.654000, Random : 20.409000
+
+Test 2
+10000 : Right : 2.010000, Middle :1.003000, Random : 1.000000
+20000 : Right : 3.001000, Middle :2.001000, Random : 3.511000
+30000 : Right : 3.505000, Middle :4.013000, Random : 6.001000
+40000 : Right : 5.505000, Middle :5.505000, Random : 7.701000
+50000 : Right : 7.960000, Middle :6.514000, Random : 9.516000
+60000 : Right : 9.027000, Middle :8.003000, Random : 11.847000
+70000 : Right : 10.517000, Middle :10.960000, Random : 12.507000
+80000 : Right : 12.876000, Middle :10.514000, Random : 16.023000
+90000 : Right : 14.009000, Middle :12.517000, Random : 18.366000
+100000 : Right : 17.426000, Middle :14.000000, Random : 19.086000
+
+Test 3
+10000 : Right : 1.004000, Middle :1.002000, Random : 2.038000
+20000 : Right : 3.404000, Middle :2.017000, Random : 4.024000
+30000 : Right : 4.235000, Middle :4.001000, Random : 4.678000
+40000 : Right : 5.013000, Middle :5.893000, Random : 7.006000
+50000 : Right : 7.562000, Middle :6.018000, Random : 9.286000
+60000 : Right : 9.589000, Middle :8.547000, Random : 11.602000
+70000 : Right : 11.049000, Middle :10.176000, Random : 14.079000
+80000 : Right : 13.136000, Middle :11.647000, Random : 14.707000
+90000 : Right : 14.329000, Middle :13.021000, Random : 17.573000
+100000 : Right : 17.272000, Middle :14.551000, Random : 20.079000
+
+Test 4
+10000 : Right : 2.000000, Middle :0.502000, Random : 2.002000
+20000 : Right : 2.000000, Middle :3.510000, Random : 3.001000
+30000 : Right : 5.511000, Middle :3.511000, Random : 5.525000
+40000 : Right : 6.002000, Middle :4.503000, Random : 8.510000
+50000 : Right : 7.503000, Middle :7.002000, Random : 8.984000
+60000 : Right : 8.505000, Middle :9.912000, Random : 11.597000
+70000 : Right : 11.616000, Middle :9.332000, Random : 14.177000
+80000 : Right : 12.099000, Middle :12.748000, Random : 16.123000
+90000 : Right : 15.183000, Middle :12.602000, Random : 18.461000
+100000 : Right : 16.848000, Middle :14.707000, Random : 20.032000
+
+Test 5
+10000 : Right : 2.009000, Middle :1.013000, Random : 1.503000
+20000 : Right : 3.349000, Middle :3.022000, Random : 3.066000
+30000 : Right : 5.397000, Middle :4.675000, Random : 5.028000
+40000 : Right : 9.259000, Middle :6.022000, Random : 7.284000
+50000 : Right : 12.105000, Middle :6.533000, Random : 9.574000
+60000 : Right : 12.601000, Middle :8.340000, Random : 11.717000
+70000 : Right : 16.158000, Middle :9.867000, Random : 13.671000
+80000 : Right : 17.664000, Middle :12.095000, Random : 15.833000
+90000 : Right : 21.209000, Middle :12.185000, Random : 18.680000
+100000 : Right : 24.339000, Middle :14.437000, Random : 24.075000
